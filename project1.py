@@ -45,4 +45,4 @@ Subject: %s
                 server.sendmail(sent_from, to, email_text)
                 server.close()
             except:
-                print("ok")
+                print("probleme mail")
