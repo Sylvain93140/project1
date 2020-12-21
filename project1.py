@@ -7,7 +7,7 @@ ARCHIVE_PATH = 'C:\python'
 nbresjours = 365
 now = datetime.today()
 delta = timedelta(days=nbresjours)
-logs = 'C:/Users/SARUMU~1/AppData/Local/Temp/archives\data.txt'
+logs = 'C:\Windows\log archive\data.txt'
 
 
 for directory in os.listdir(ARCHIVE_PATH):
