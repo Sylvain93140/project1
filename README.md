@@ -12,7 +12,7 @@ Les paramètres à moduler selon vos besoins sont ceux ci :
 
 ARCHIVE_PATH = 'C:\python' 												#le chemin du dossier que vous souhaitez analyser
 nbresjours = 365														#le nombre de jour suite a laquelle le script archive les dossiers
-logs = 'C:/Users/SARUMU~1/AppData/Local/Temp/archives\data.txt'			#l'emplacement du fichier de log qui sera implémenter d'une nouvelle ligne à chaque archivage
+logs = 'C:/Windows/logarchive\data.txt'									#l'emplacement du fichier de log qui sera implémenter d'une nouvelle ligne à chaque archivage
 gmail_user = 'xxxxx'													#compte mail 
 gmail_password = 'xxxxxx'												#mot de passe du compte mail
 to = 'xxxxxx'															#destinataire du fichier log
