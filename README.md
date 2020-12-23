@@ -11,12 +11,19 @@ Le script génère un fichier de log à chaque compression d’un dossier et env
 Les paramètres à moduler selon vos besoins sont ceux ci :
 
 ARCHIVE_PATH = 'C:\python' 												#le chemin du dossier que vous souhaitez analyser
+
 nbresjours = 365														#le nombre de jour suite a laquelle le script archive les dossiers
+
 logs = 'C:/Windows/logarchive\data.txt'									#l'emplacement du fichier de log qui sera implémenter d'une nouvelle ligne à chaque archivage
+
 gmail_user = 'xxxxx'													#compte mail 
+
 gmail_password = 'xxxxxx'												#mot de passe du compte mail
+
 to = 'xxxxxx'															#destinataire du fichier log
+
 subject = "New file add to archive"										#sujet du mail
+
 body = ("[%s] Add %s to archive \n" % (now, directoryPath))				#corps du mail (par défaut : contient fichier archivé, empalcement, date, heure)
 
 
