@@ -7,7 +7,7 @@ ARCHIVE_PATH = 'C:\python'
 nbresjours = 365
 now = datetime.today()
 delta = timedelta(days=nbresjours)
-logs = 'C:\Windows\log archive\data.txt'
+logs = 'C:\Windows\log archive\log.txt'
 gmail_user = ''
 gmail_password = 'xxxxxx'
 to = ['xxxxxx']
