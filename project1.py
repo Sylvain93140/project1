@@ -8,6 +8,8 @@ nbresjours = 365
 now = datetime.today()
 delta = timedelta(days=nbresjours)
 logs = 'C:\Windows\log archive\data.txt'
+gmail_user = 'xxxxx'
+gmail_password = 'xxxxxx'
 
 
 for directory in os.listdir(ARCHIVE_PATH):
@@ -21,9 +23,6 @@ for directory in os.listdir(ARCHIVE_PATH):
             file.write("[%s] Add %s to archive \n" % (now, directoryPath))
 
             file.close()
-
-            gmail_user = 'xxxxx'
-            gmail_password = 'xxxxxx'
 
             sent_from = gmail_user
             to = ['xxxxxx']
