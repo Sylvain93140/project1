@@ -8,8 +8,9 @@ nbresjours = 365
 now = datetime.today()
 delta = timedelta(days=nbresjours)
 logs = 'C:\Windows\log archive\data.txt'
-gmail_user = 'xxxxx'
+gmail_user = ''
 gmail_password = 'xxxxxx'
+to = ['xxxxxx']
 
 
 for directory in os.listdir(ARCHIVE_PATH):
@@ -17,15 +18,27 @@ for directory in os.listdir(ARCHIVE_PATH):
     if os.path.isdir(directoryPath):
         directoryTime = datetime.fromtimestamp(os.path.getmtime(directoryPath))
         if now - directoryTime > delta:
-            shutil.make_archive(directoryPath, 'zip',
-                                directoryPath) and shutil.rmtree(directoryPath, ignore_errors=True)
-            file = open(logs, "a")
-            file.write("[%s] Add %s to archive \n" % (now, directoryPath))
 
-            file.close()
+            try:
+
+                shutil.make_archive(directoryPath, 'zip',
+                                    directoryPath) and shutil.rmtree(directoryPath, ignore_errors=True)
+
+            except IOError:
+                print("chemin non existant")
+
+            try:
+
+                f = open(logs, "a")
+
+                f.write("[%s] Add %s to archive \n" % (now, directoryPath))
+
+                f.close()
+
+            except IOError:
+                print("file not accessible")
 
             sent_from = gmail_user
-            to = ['xxxxxx']
             subject = "New file add to archive"
             body = ("[%s] Add %s to archive \n" % (now, directoryPath))
 
