@@ -5,6 +5,7 @@ Créé par Sylvain ARUMUGAM
 Version 1.0
 
 OS : Windows
+
 Python Version : 3.9
 
 Ce script permet de lister les différents dossiers d’un répertoire sous Windows 
