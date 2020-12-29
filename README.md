@@ -4,7 +4,7 @@ Archived Windows old files
 Créé par Sylvain ARUMUGAM
 Version 1.0
 
-OS : Windows
+OS : Windows 10 Pro (20H2)
 
 Python Version : 3.9
 
